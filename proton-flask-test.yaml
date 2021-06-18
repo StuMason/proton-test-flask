@@ -1,0 +1,9 @@
+proton: ServiceSpec
+instances:
+- name: proton-flask-beta
+  environment: Beta
+  spec:
+    port: 8080
+    desired_count: 1
+    task_size: x-small
+    image: public.ecr.aws/z9d2n7e1/nginx:1.19.5
